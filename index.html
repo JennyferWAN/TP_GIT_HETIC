@@ -4,26 +4,49 @@
         <title> Menu du jour</title>
         <meta charset="utf-8">
         <link href="styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <p>Restaurant</p>
-            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+        <script src="https://kit.fontawesome.com/3a26c28001.js" crossorigin="anonymous"></script>
+   </head>
+    <body class="h-screen w-screen flex flex-col justify-between py-6 items-center bg-gray-100">
+        <header class="flex flex-row items-center mt-6 pb-6 text-5xl text-blue-500">
+            <i class="fa-solid fa-utensils  pr-4"></i>
+            <h1 class="pacifico">Menu du jour</h1>
         </header>
-        <h1>Entrée:</h1>
-        <p>Gyoza
-        Salade de choux
-        Soupe miso 
-        </p>
-        <h2>Plat:</h2>
-        <p>Sushi 6/12/18 pièces
-        Sashimi
-        Brochettes 
-        </p>
-        <h3>Dessert:</h3>
-        <p>Mochi
-            Glace au matcha
-            Salade de fruits
-        </p>
+        <section class="h-3/4 w-1/2 pb-5 flex flex-col justify-between items-center">    
+            <div class="bg-white w-full h-auto rounded-xl shadow-lg">
+                <div class="rounded-t-xl border-b-2 border-blue-500 allerta text-start text-2xl">
+                    <h1 class="p-3 text-blue-500"><i class="fa-solid fa-bowl-food pr-2"></i>Entrée </h1>
+                </div>
+                <ul class="m-2 pl-6 list-disc">
+                    <li>Gyoza</li>
+                    <li>Salade de choux</li>
+                    <li>Soupe miso</li> 
+                </ul>
+            </div>
+            <div class="bg-white w-full h-auto rounded-xl shadow-lg">
+                <div class="rounded-t-xl border-b-2 border-blue-500 text-blue-500 allerta text-start text-2xl">
+                    <h1 class="p-3"><i class="fa-solid fa-bowl-rice pr-2"></i>Plat </h1>
+                </div>
+                <ul class="m-2 pl-6 list-disc">
+                    <li>Sushi 6/12/18 pièces</li>
+                <li>Sashimi</li>
+                <li>Brochettes</li>
+                </ul>
+            </div>
+            <div class="bg-white w-full h-auto rounded-xl shadow-lg">
+                <div class="rounded-t-xl border-b-2 border-blue-500 text-blue-500 allerta text-start text-2xl">
+                    <h1 class="p-3"><i class="fa-solid fa-ice-cream pr-2"></i>Dessert </h1>
+                </div>
+                <ul class="m-2 pl-6 list-disc">
+                    <li>Mochi</li>
+            <li>Glace au matcha</li>
+            <li>Salade de fruits</li>
+                </ul>
+            </div>
+       
+        </section>
+        
     </body>
 </html>
